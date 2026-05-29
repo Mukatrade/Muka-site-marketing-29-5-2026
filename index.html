@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MukaTrade | Global Product & Equipment Sourcing</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><path d='M 50 10 Q 70 30 60 70 Q 50 80 40 70 Q 30 30 50 10' fill='%23D97706'/></svg>">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@700;800;900&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .heading-font {
+            font-family: 'Outfit', sans-serif;
+        }
+        @keyframes marquee-scroll {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+        .animate-marquee-scroll {
+            animation: marquee-scroll 45s linear infinite;
+            white-space: nowrap;
+        }
+    </style>
+</head>
+<body class="bg-[#0B0F19] text-[#FAFAFA] antialiased selection:bg-[#D97706] selection:text-black">
+
+    <!-- FIXED HEADER -->
+    <header class="fixed top-0 left-0 w-full bg-[#0B0F19]/90 backdrop-blur-md border-b border-slate-900 z-50 px-6 py-4">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+            <div class="h-10 w-40 flex items-center">
+                <div class="text-lg heading-font font-bold tracking-wider text-white">
+                    MukaTrade
+                </div>
+            </div>
+            <nav class="hidden lg:flex items-center space-x-8 text-sm font-medium text-slate-400">
+                <a href="#universes" class="hover:text-white transition-colors">Categories</a>
+                <a href="#projects" class="hover:text-white transition-colors">Case Studies</a>
+                <a href="#challenges" class="hover:text-white transition-colors">Risk Profile</a>
+            </nav>
+            <div class="flex items-center gap-3">
+                <a href="https://muka-scraper-git-feat-anthropic-migration-yaron-engels-projects.vercel.app/dashboard" target="_blank" class="border border-slate-700 hover:border-slate-500 text-slate-300 font-semibold text-xs uppercase tracking-wider px-4 py-2.5 rounded-lg transition-all flex items-center gap-2">
+                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"/></svg>
+                    Staff Portal
+                </a>
+                <a href="https://calendly.com/yaron-e" target="_blank" class="border border-amber-600 hover:border-amber-500 text-amber-400 font-semibold text-xs uppercase tracking-wider px-4 py-2.5 rounded-lg transition-all flex items-center gap-2">
+                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M5.5 13a3.5 3.5 0 01-.369-6.98 4 4 0 117.753-1.3A4.5 4.5 0 1113.5 13H11V9.413l1.293 1.293a1 1 0 001.414-1.414l-3-3a1 1 0 00-1.414 0l-3 3a1 1 0 001.414 1.414L9 9.414V13H5.5z"/></svg>
+                    Book a Call
+                </a>
+                <a href="#rfq" class="bg-[#D97706] hover:bg-[#B45309] text-black font-bold text-xs uppercase tracking-wider px-6 py-2.5 rounded-lg transition-all shadow-lg shadow-[#D97706]/10">
+                    START RFQ
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="relative pt-28 pb-16 px-6 overflow-hidden">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6">
+                <h1 class="heading-font text-5xl sm:text-6xl font-black text-white leading-[1.08] tracking-tight">
+                    We Find, Verify, and Deliver the Industrial Equipment Your Business Needs.
+                </h1>
+                <p class="text-slate-400 text-base leading-relaxed max-w-lg">
+                    Stop wasting weeks chasing overseas manufacturers or worrying about supplier fraud. Tell MukaTrade what machinery, parts, or industrial materials you need. Our global network handles factory vetting, quality inspection, customs, and door-to-door logistics—so you can focus on building.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 pt-4">
+                    <a href="#rfq" class="bg-[#D97706] hover:bg-[#B45309] text-black text-center font-bold px-8 py-4 rounded-xl transition-all shadow-lg shadow-[#D97706]/10">
+                        Initiate RFQ
+                    </a>
+                    <a href="https://calendly.com/yaron-e" target="_blank" class="border border-amber-600 hover:bg-amber-950 text-amber-400 text-center font-semibold px-8 py-4 rounded-xl transition-colors">
+                        Book a Call
+                    </a>
+                </div>
+            </div>
+
+            <div class="relative bg-slate-950 rounded-2xl border border-slate-800 p-4 shadow-2xl">
+                <div class="flex items-center justify-start border-b border-slate-900 pb-3 mb-3 px-2">
+                    <div class="flex gap-1.5">
+                        <span class="w-2.5 h-2.5 rounded-full bg-slate-800"></span>
+                        <span class="w-2.5 h-2.5 rounded-full bg-slate-800"></span>
+                        <span class="w-2.5 h-2.5 rounded-full bg-slate-800"></span>
+                    </div>
+                </div>
+                <div class="bg-slate-900/40 rounded-xl overflow-hidden border border-slate-900 aspect-video flex items-center justify-center">
+                    <img src="IMG1.avif" class="w-full h-full object-cover rounded-lg" alt="Global Operations Hub" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MARQUEE TICKER - FULL WIDTH & BOLD -->
+    <section class="border-y border-slate-900 bg-slate-950/40 overflow-hidden">
+        <div class="flex items-center relative h-20">
+            <div class="animate-marquee-scroll text-xl font-bold tracking-widest uppercase text-slate-500 py-6 font-mono px-4 flex gap-8">
+                <span>ARMORED VEHICLE TYRES</span>
+                <span class="text-[#D97706]">●</span>
+                <span>DIESEL GENERATORS</span>
+                <span class="text-[#D97706]">●</span>
+                <span>ENTERPRISE SERVER RACKS</span>
+                <span class="text-[#D97706]">●</span>
+                <span>SATELLITE COMM PHONES</span>
+                <span class="text-[#D97706]">●</span>
+                <span>INDUSTRIAL COMPRESSORS</span>
+                <span class="text-[#D97706]">●</span>
+                <span>WATER PURIFICATION MATRICES</span>
+                <span class="text-[#D97706]">●</span>
+                <span>FORKLIFT FLEETS</span>
+                <span class="text-[#D97706]">●</span>
+                <span>ARMORED VEHICLE TYRES</span>
+                <span class="text-[#D97706]">●</span>
+                <span>DIESEL GENERATORS</span>
+                <span class="text-[#D97706]">●</span>
+                <span>ENTERPRISE SERVER RACKS</span>
+                <span class="text-[#D97706]">●</span>
+                <span>SATELLITE COMM PHONES</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROCUREMENT UNIVERSES GRID -->
+    <section id="universes" class="py-20 px-6 bg-[#0B0F19]">
+        <div class="max-w-7xl mx-auto space-y-12">
+            <div class="text-center max-w-2xl mx-auto space-y-3">
+                <h2 class="heading-font text-4xl font-extrabold text-white tracking-tight">
+                    Procurement Universes
+                </h2>
+                <p class="text-slate-400 text-base">
+                    Our global network sources across four specialized verticals, each with deep factory relationships and compliance expertise.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-slate-950/60 border border-slate-900 rounded-xl p-6 hover:border-[#D97706]/30 transition-colors">
+                    <div class="text-xs font-mono text-[#D97706] font-bold tracking-widest mb-3">01 // HEAVY MACHINERY & FLEET</div>
+                    <h3 class="heading-font text-lg font-bold text-white mb-3">Industrial Plants & Equipment</h3>
+                    <ul class="text-slate-400 text-sm space-y-2">
+                        <li>• Forklifts & material handlers</li>
+                        <li>• Tractors & earth movers</li>
+                        <li>• Generator plants</li>
+                        <li>• Industrial rollers</li>
+                    </ul>
+                </div>
+
+                <div class="bg-slate-950/60 border border-slate-900 rounded-xl p-6 hover:border-[#D97706]/30 transition-colors">
+                    <div class="text-xs font-mono text-[#D97706] font-bold tracking-widest mb-3">02 // ENTERPRISE IT & TELECOM</div>
+                    <h3 class="heading-font text-lg font-bold text-white mb-3">Data & Communication Systems</h3>
+                    <ul class="text-slate-400 text-sm space-y-2">
+                        <li>• Enterprise servers</li>
+                        <li>• Satellite communications</li>
+                        <li>• Network switches</li>
+                        <li>• Tracking arrays</li>
+                    </ul>
+                </div>
+
+                <div class="bg-slate-950/60 border border-slate-900 rounded-xl p-6 hover:border-[#D97706]/30 transition-colors">
+                    <div class="text-xs font-mono text-[#D97706] font-bold tracking-widest mb-3">03 // TACTICAL & EMERGENCY OPS</div>
+                    <h3 class="heading-font text-lg font-bold text-white mb-3">Security & Response Systems</h3>
+                    <ul class="text-slate-400 text-sm space-y-2">
+                        <li>• Ballistic armor & protection</li>
+                        <li>• Night vision systems</li>
+                        <li>• Detection kits</li>
+                        <li>• Emergency response gear</li>
+                    </ul>
+                </div>
+
+                <div class="bg-slate-950/60 border border-slate-900 rounded-xl p-6 hover:border-[#D97706]/30 transition-colors">
+                    <div class="text-xs font-mono text-[#D97706] font-bold tracking-widest mb-3">04 // COMMERCIAL & FACILITIES</div>
+                    <h3 class="heading-font text-lg font-bold text-white mb-3">Infrastructure Assets</h3>
+                    <ul class="text-slate-400 text-sm space-y-2">
+                        <li>• Commercial HVAC systems</li>
+                        <li>• Kitchen equipment</li>
+                        <li>• Compound furniture</li>
+                        <li>• Facilities infrastructure</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RECENT GLOBAL SOURCING PROJECTS -->
+    <section id="projects" class="py-20 px-6 bg-slate-950/30 border-t border-slate-900">
+        <div class="max-w-7xl mx-auto space-y-12">
+            <div class="text-center max-w-2xl mx-auto space-y-3">
+                <h2 class="heading-font text-4xl font-extrabold text-white tracking-tight">
+                    Recent Global Sourcing Projects
+                </h2>
+                <p class="text-slate-400 text-base">
+                    See how we map logistics and bypass bottlenecks for international buyers across every continent.
+                </p>
+            </div>
+
+            <!-- Case Study 1 -->
+            <div class="bg-slate-950 border border-slate-900 rounded-2xl overflow-hidden">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-0">
+                    <div class="p-8 lg:p-10 flex flex-col justify-center space-y-5">
+                        <div class="text-xs font-mono text-[#D97706] font-bold tracking-widest">CASE 01 // EMERGENCY DEPLOYMENT</div>
+                        <h3 class="heading-font text-3xl font-bold text-white">Emergency Plant Machinery Procurement</h3>
+                        <p class="text-slate-400 leading-relaxed">
+                            Global industrial operator needed 15 critical units delivered within 72 hours. Our team coordinated cross-continental factory verification, arranged expedited freight, and cleared customs in-transit. Equipment arrived on schedule. Zero delays.
+                        </p>
+                        <div class="flex gap-4 pt-2">
+                            <span class="text-xs bg-slate-900 text-slate-300 px-3 py-1 rounded-full">72-Hour Turnaround</span>
+                            <span class="text-xs bg-slate-900 text-slate-300 px-3 py-1 rounded-full">Zero Delays</span>
+                        </div>
+                    </div>
+                    <div class="relative min-h-80 lg:min-h-auto bg-slate-900/40 flex items-center justify-center overflow-hidden">
+                        <img src="IMG2.avif" class="w-full h-full object-cover" alt="Emergency Plant Machinery Sourcing" />
+                    </div>
+                </div>
+            </div>
+
+            <!-- Case Study 2 -->
+            <div class="bg-slate-950 border border-slate-900 rounded-2xl overflow-hidden">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-0">
+                    <div class="relative min-h-80 lg:min-h-auto bg-slate-900/40 flex items-center justify-center overflow-hidden lg:order-2">
+                        <img src="IMG3.avif" class="w-full h-full object-cover" alt="Multi-Market Commercial Sourcing" />
+                    </div>
+                    <div class="p-8 lg:p-10 flex flex-col justify-center space-y-5 lg:order-1">
+                        <div class="text-xs font-mono text-[#D97706] font-bold tracking-widest">CASE 02 // MULTI-MARKET CAMPAIGN</div>
+                        <h3 class="heading-font text-3xl font-bold text-white">Multi-Market Commercial Material Sourcing</h3>
+                        <p class="text-slate-400 leading-relaxed">
+                            Enterprise client required standardized HVAC units across 12 countries with local compliance certifications. We mapped regional suppliers, negotiated bulk pricing, coordinated simultaneous logistics, and delivered with unified warranty coverage.
+                        </p>
+                        <div class="flex gap-4 pt-2">
+                            <span class="text-xs bg-slate-900 text-slate-300 px-3 py-1 rounded-full">12-Country Deployment</span>
+                            <span class="text-xs bg-slate-900 text-slate-300 px-3 py-1 rounded-full">Unified Compliance</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- REALITY OF GLOBAL SOURCING -->
+    <section id="challenges" class="py-20 px-6 bg-[#0B0F19]">
+        <div class="max-w-7xl mx-auto space-y-12">
+            <div class="text-center max-w-2xl mx-auto space-y-3">
+                <h2 class="heading-font text-4xl font-extrabold text-white tracking-tight">
+                    The Reality of Global Sourcing
+                </h2>
+                <p class="text-slate-400 text-base">
+                    Six critical challenges that blindside unprepared procurement teams.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-slate-950/50 border border-slate-900 rounded-xl p-6 hover:border-slate-800 transition-colors">
+                    <div class="text-xs font-mono text-slate-500 mb-3 font-bold">[ 01 ]</div>
+                    <h3 class="heading-font text-lg font-bold text-white mb-2">Endless Port Delays</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Customs backlogs and international paperwork protocols stall production lines for months.</p>
+                </div>
+                <div class="bg-slate-950/50 border border-slate-900 rounded-xl p-6 hover:border-slate-800 transition-colors">
+                    <div class="text-xs font-mono text-slate-500 mb-3 font-bold">[ 02 ]</div>
+                    <h3 class="heading-font text-lg font-bold text-white mb-2">Sample vs. Reality Nightmare</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Factory samples look pristine, but bulk shipments arrive with serious defects.</p>
+                </div>
+                <div class="bg-slate-950/50 border border-slate-900 rounded-xl p-6 hover:border-slate-800 transition-colors">
+                    <div class="text-xs font-mono text-slate-500 mb-3 font-bold">[ 03 ]</div>
+                    <h3 class="heading-font text-lg font-bold text-white mb-2">Hidden Cost Creep</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Unmapped tariffs and fees routinely destroy initial margin calculations.</p>
+                </div>
+                <div class="bg-slate-950/50 border border-slate-900 rounded-xl p-6 hover:border-slate-800 transition-colors">
+                    <div class="text-xs font-mono text-slate-500 mb-3 font-bold">[ 04 ]</div>
+                    <h3 class="heading-font text-lg font-bold text-white mb-2">Phantom Suppliers</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Unvetted entities vanish midway through production, leaving zero recourse.</p>
+                </div>
+                <div class="bg-slate-950/50 border border-slate-900 rounded-xl p-6 hover:border-slate-800 transition-colors">
+                    <div class="text-xs font-mono text-slate-500 mb-3 font-bold">[ 05 ]</div>
+                    <h3 class="heading-font text-lg font-bold text-white mb-2">Stock-Out Shame</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Brokers promise inventory, then drop contracts when logistics tighten.</p>
+                </div>
+                <div class="bg-slate-950/50 border border-slate-900 rounded-xl p-6 hover:border-slate-800 transition-colors">
+                    <div class="text-xs font-mono text-slate-500 mb-3 font-bold">[ 06 ]</div>
+                    <h3 class="heading-font text-lg font-bold text-white mb-2">Time-Zone Burnout</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Coordinating across 12+ time zones burns operational bandwidth and weeks.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RFQ INTAKE FORM -->
+    <section id="rfq" class="py-20 px-6 bg-slate-950/30 border-t border-slate-900">
+        <div class="max-w-3xl mx-auto space-y-8">
+            <div class="text-center space-y-3">
+                <div class="text-xs font-mono text-[#D97706] tracking-widest uppercase font-bold">Secure Intake Terminal</div>
+                <h2 class="heading-font text-4xl font-extrabold text-white tracking-tight" style="letter-spacing: 0.15em;">Industrial &nbsp; RFQ &nbsp; Intake &nbsp; Terminal</h2>
+                <p class="text-slate-400 text-base">Tell us your specifications. Our network takes it from there.</p>
+            </div>
+
+            <form action="https://formspree.io/f/mpqnnzlk" method="POST" class="bg-slate-950 border border-slate-900 rounded-2xl p-8 sm:p-10 space-y-6 shadow-2xl">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-xs font-mono text-slate-400 uppercase tracking-wider font-bold mb-2">Company Name</label>
+                        <input type="text" name="company" class="w-full bg-[#0B0F19] border border-slate-800 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-[#D97706] transition-colors" placeholder="Enter corporate entity" required>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-mono text-slate-400 uppercase tracking-wider font-bold mb-2">Contact Email</label>
+                        <input type="email" name="email" class="w-full bg-[#0B0F19] border border-slate-800 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-[#D97706] transition-colors" placeholder="name@company.com" required>
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-mono text-slate-400 uppercase tracking-wider font-bold mb-2">What equipment, machinery, or industrial materials do you need sourced?</label>
+                    <textarea name="message" rows="5" class="w-full bg-[#0B0F19] border border-slate-800 rounded-lg px-4 py-3 text-white placeholder-slate-600 focus:outline-none focus:border-[#D97706] transition-colors" placeholder="Example: 24 CNC cutting units, CE-compliant, volume logistics support required..." required></textarea>
+                </div>
+
+                <button type="submit" class="w-full bg-[#D97706] hover:bg-[#B45309] text-black font-bold text-sm uppercase tracking-wider py-4 rounded-lg transition-colors shadow-lg shadow-[#D97706]/10">
+                    Submit Project Requirements
+                </button>
+
+                <div class="text-center text-xs font-mono text-slate-500">
+                    🔒 Typical response within 24 hours. Full NDA protection guaranteed.
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="border-t border-slate-950 bg-slate-950/40 py-12 px-6 text-slate-500">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-6">
+            <div class="font-mono text-[11px] tracking-wider text-slate-400">
+                &copy; 2022 MukaTrade LLC. All operational vectors reserved.
+            </div>
+            <div class="flex gap-8 text-sm">
+                <a href="#universes" class="hover:text-white transition-colors">Categories</a>
+                <a href="#projects" class="hover:text-white transition-colors">Case Studies</a>
+                <a href="#challenges" class="hover:text-white transition-colors">Risk Profile</a>
+                <a href="#rfq" class="hover:text-[#D97706] transition-colors font-semibold">RFQ Portal</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
