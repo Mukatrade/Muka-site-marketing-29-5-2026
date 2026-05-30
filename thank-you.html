@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You | MukaTrade</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@700;800;900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><path d='M 50 10 Q 70 30 60 70 Q 50 80 40 70 Q 30 30 50 10' fill='%23D97706'/></svg>">
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .heading-font {
+            font-family: 'Outfit', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-[#0B0F19] text-[#FAFAFA] antialiased overflow-hidden">
+
+    <div class="min-h-screen flex items-center justify-center px-4 sm:px-6 py-8">
+        <div class="text-center space-y-6 sm:space-y-8 max-w-2xl w-full">
+            <!-- Logo -->
+            <div class="flex justify-center">
+                <img src="Logo Muka.png" class="h-16 w-auto object-contain" alt="MukaTrade Logo">
+            </div>
+
+            <!-- Success Message -->
+            <div class="space-y-3 sm:space-y-4">
+                <h1 class="heading-font text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-tight">
+                    Thank You!
+                </h1>
+                <p class="text-slate-300 sm:text-slate-400 text-base sm:text-lg leading-relaxed">
+                    Your project requirements have been received. Our global sourcing network is already analyzing your request.
+                </p>
+            </div>
+
+            <!-- Checkmark Animation -->
+            <div class="flex justify-center">
+                <div class="w-20 h-20 rounded-full bg-[#D97706]/20 border-2 border-[#D97706] flex items-center justify-center animate-pulse">
+                    <svg class="w-10 h-10 text-[#D97706]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                </div>
+            </div>
+
+            <!-- Details -->
+            <div class="bg-slate-950/50 border border-slate-900 rounded-xl p-6 space-y-3">
+                <p class="text-sm text-slate-400">
+                    <span class="font-semibold text-white">What's next?</span><br>
+                    Our team typically responds within 24 hours with initial sourcing options and cost analysis.
+                </p>
+                <p class="text-xs text-slate-500 font-mono">
+                    Confirmation email has been sent to your address.
+                </p>
+            </div>
+
+            <!-- Redirect Timer -->
+            <div class="space-y-4 sm:space-y-6">
+                <div class="bg-slate-900/60 border border-slate-800 rounded-2xl p-6 sm:p-8">
+                    <p class="text-slate-300 text-sm sm:text-base mb-3 sm:mb-4">
+                        Returning to the main site in
+                    </p>
+                    <div class="text-5xl sm:text-7xl font-black text-[#D97706] heading-font" id="countdown">5</div>
+                    <p class="text-slate-400 text-xs sm:text-sm mt-3 sm:mt-4">seconds</p>
+                </div>
+                <a href="index.html" class="inline-block bg-[#D97706] hover:bg-[#B45309] text-black font-bold px-6 sm:px-8 py-3 sm:py-4 rounded-lg transition-colors shadow-lg shadow-[#D97706]/10 text-sm sm:text-base">
+                    Return to Home Now
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let count = 5;
+        const countdownEl = document.getElementById('countdown');
+
+        const interval = setInterval(() => {
+            count--;
+            countdownEl.textContent = count;
+
+            if (count === 0) {
+                clearInterval(interval);
+                window.location.href = 'index.html';
+            }
+        }, 1000);
+    </script>
+
+</body>
+</html>
